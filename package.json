@@ -4,7 +4,27 @@
   "description": "my first socket.io app",
   "dependencies": {
     "express": "^4.17.1",
+    "node": "^15.10.0",
     "pg": "^8.5.1",
     "socket.io": "^3.1.2"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bwarembourg/balladeur-xchange.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "engine": {
+    "node": "12.x"
+  },
+  "bugs": {
+    "url": "https://github.com/bwarembourg/balladeur-xchange/issues"
+  },
+  "homepage": "https://github.com/bwarembourg/balladeur-xchange#readme"
 }

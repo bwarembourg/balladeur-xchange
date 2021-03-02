@@ -1,5 +1,6 @@
 const app = require('express')();
 const http = require('http').Server(app);
+const port = process.env.PORT || 3000
 const io = require("socket.io")(http, {
   cors: {
     origin: "https://balladeur.netlify.app/",
@@ -17,7 +18,11 @@ io.on('connection', (socket) => {
   });
 });
 
-http.listen(3000, () => {
+app.get('/', (req, res) => {
+  res.send('<h1>Hello world</h1>')
+})
+
+http.listen(port, () => {
 
   console.log('listening on *:3000');
 });
